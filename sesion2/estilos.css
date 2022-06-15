@@ -1,34 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Roboto:wght@100&display=swap');
+
 /* Selector por medio del elemento HTML */
 body{
     font-size: 16px;
     color: black;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
+header{
+    background: #5136AD;
+}
+header nav{
+    display:inline-block;
+}
+header li{
+    display: inline;
+    margin: 0 20px;
+}
+
 p{
     color: green;
 }
 li{
     color: magenta!important;
 }
-ul{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+h2{
+    margin-top: 0;
+    /* margin-bottom
+    margin-left
+    margin-rightm */
+    font-family: 'Roboto', sans-serif;
 }
 /* Selector por medio del ID */
 #nosotros{
     height: 350px;
+    width:100%;
     background-color: blanchedalmond;
     text-align: center;
 }
 #mis-objetos{
     height:350px;
-    background-color: burlywood;
+    width:100%;
+    background: linear-gradient(to left, rgb(113, 82, 82), #555067 );
+}
+#contacto{
+    background-image: url(" https://thumbs.dreamstime.com/b/negro-geom%C3%A9trico-incons%C3%BAtil-y-grey-triangles-pattern-en-el-fondo-blanco-textura-negra-gris-geom%C3%A9trica-de-los-tri%C3%A1ngulos-con-150172283.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#contacto img{
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 /* Selector por medio de la clase */
 .title{
-    color:darkolivegreen;
+    color:#a38381;
     font-size:32px;
+    padding-top: 30px;
+    padding-left: 10px;
 }
 .navigation{
     list-style-type: none;
+}
+.logo-container{
+    display: inline-block;
+    margin: 30px 15px;
 }
 .logo{
     width:210px;
@@ -43,13 +81,23 @@ ul{
 /* PseudoSelectores */
 
 .logo:hover{
-    width:280px;
+    width:240px;
 }
 
 .first-big::first-letter{
     font-size:36px;
 }
 
-li{
-    color: blue;
+button.boton-morado{
+    background: #5136AD;
+    color: white;
+    height: 40px;
+    width: 85px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 30px;
+}
+input{
+    width:200px;
+    display: block;
 }

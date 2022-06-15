@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit hic blanditiis fugit mollitia unde obcaecati ex quod corporis. Corporis alias dolor laudantium id delectus velit maxime nostrum voluptatibus nesciunt molestias.</p>
-</body>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img
+          class="logo"
+          src="https://devf-website.s3.amazonaws.com/static/assets/img/logo-devf-white.svg"
+          alt="logo devf"
+        />
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li>Inicio</li>
+          <li>Sobre Nosotros</li>
+          <li>Contacto</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Contactanos</h2>
+      <section id="formulario">
+        <form id="register" action="">
+          <label for="Nombre">Nombre</label>
+          <input placeholder="Ej. JUAN PEREZ" type="text" name="Nombre" required />
+          <label for="Edad">Edad</label>
+          <input placeholder="EJ. 27" type="number" name="Edad" />
+          <label for="Correo">Correo Electronico</label>
+          <input placeholder="Ej. juan@gmail.com" type="email" name="Correo" />
+          <label for="fecha">Fecha de nacimiento</label>
+          <input type="date" name="fecha" />
+          <label for="comentarios">Comentarios</label>
+          <textarea name="comentarios" id=""></textarea>
+          <label for="contra">Contraseña</label>
+          <input name="contra" type="password" placeholder="Contraseña" />
+          <button class="boton-morado"  type="button" value="Enviar" >Enviar</button>
+        </form>
+        <h2>Dame tus preferencias en frutas</h2>
+        <form action="" id="preferences">
+            <input type="checkbox" id="manzana" value="manzana">Manzana
+            <input type="checkbox" id="Pera" value="Pera">Pera
+            <input type="checkbox" id="Naranja" value="Naranja">Naranja
+            <button class="boton-morado" type="button" value="Enviar" >Enviar</button>
+
+        </form>
+        <h2>Escoge una verdura</h2>
+        <form action="" id="verduras">
+            <input type="radio" name="Zanahoria" id="Zanahoria" value="Zanahoria">Zanahoria
+            <input type="radio" name="Pepino" id="Pepino" value="Pepino">Pepino
+            <input type="radio" name="Calabaza" id="Calabaza" value="Calabaza">Calabaza
+            <button class="boton-morado" type="button" value="Enviar" >Enviar</button>
+
+        </form>
+        <form action="">
+            <h2>Selecciona tu marca favorita de coches</h2>
+            <label for="autos">Selecciona una marca</label>
+            <select name="autos" id="">
+                <option value="">Volvo</option>
+                <option value="">Audi</option>
+                <option value="">Cupra</option>
+            </select>
+            <button class="boton-morado" type="button" value="Enviar" >Enviar</button>
+        </form>
+        <form action="">
+            <input type="range" name="" id="">
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
