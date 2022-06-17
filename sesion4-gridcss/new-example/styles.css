@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding:0;
+  
+}
+header{
+    background-color: azure;
+    height: 55px;
+}
+header ul{
+    margin: 10px;
+    float: right;
+}
+header li{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0 20px;
+
+}
+#fondo img{
+    width: 100%;
+    height: auto;
+}
+
+.contacto-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+.icons-social li{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0 20px;
+}
+.icons-social i{
+    font-size:80px;
+}

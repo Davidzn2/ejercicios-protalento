@@ -1,0 +1,19 @@
+.grid-container{
+    display:grid;
+    background-color: burlywood;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: stretch;
+}
+.grid-container div{
+    background-color: bisque;
+    border: 1px solid black;
+    font-size: 18px;
+    height: 80px;
+}
+.grid-item-1{
+    grid-column-start: 2;
+    grid-column-end:5;
+    justify-self: stretch;
+}
